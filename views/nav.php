@@ -7,10 +7,10 @@
       <ul class="navbar-nav">
         
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASE_URL; ?>usuario">Usuários <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="<?php echo BASE_URL; ?>users">Usuários <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASE_URL; ?>mensagem">Mensagens</span></a>
+              <a class="nav-link" href="<?php echo BASE_URL; ?>products">Produtos</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo BASE_URL; ?>login/sair">Sair</a>

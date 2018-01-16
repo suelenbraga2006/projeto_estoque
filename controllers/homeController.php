@@ -1,10 +1,13 @@
 <?php
 class homeController extends Controller {
 
-	public function __construct(){
-		//parent::__contruct();
+	private $user;
 
-		if(!isset($_SESSION['token'])){
+	public function __construct(){
+		parent::__construct();
+
+		$this->user = new Users();
+		if(!$this->user->checkLogin()){
 			header("Location: ".BASE_URL."login");
 		}
 	}
