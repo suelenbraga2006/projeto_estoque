@@ -9,9 +9,11 @@
 						}
 					?>
 
-					<div class="card card-inverse">
-					  <h3 class="card-header text-center">Controle de Estoque</h3>
-					  <div class="card-block">
+					<div class="card">
+					  <div class="card-header text-center">
+					    <h3>Controle de Estoque</h3>
+					  </div>
+					  <div class="card-body">
 					    <form method="POST">
 							  <div class="form-group">
 							    <label for="email">Número</label>
@@ -21,11 +23,11 @@
 							    <label for="senha">Senha</label>
 							    <input type="password" class="form-control" id="password" name="password">
 							  </div>
-							  <button type="submit" class="btn btn-primary">Entrar</button>
+							  <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Entrar</button>
 						</form>
 					  </div>
 					  <div class="card-footer text-muted text-center">
-					   Made in 2018
+					    Made In 2018
 					  </div>
 					</div>
 				</div>

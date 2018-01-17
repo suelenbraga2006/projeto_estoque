@@ -1,3 +1,5 @@
+<?php echo $this->loadView('nav', $dados = array()); ?>
+
 <div class="row">
 	<div class="col-xl-12">
 		<div class="jumbotron jumbotron-fluid">

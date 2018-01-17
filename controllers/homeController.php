@@ -9,6 +9,7 @@ class homeController extends Controller {
 		$this->user = new Users();
 		if(!$this->user->checkLogin()){
 			header("Location: ".BASE_URL."login");
+			exit;
 		}
 	}
 
