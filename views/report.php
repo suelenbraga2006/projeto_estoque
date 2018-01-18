@@ -3,20 +3,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xl-12 p-4">
-			<h1>Produtos</h1>
-			<form method="GET">
-			  <div class="form-group">
-			    <input class="form-control form-control-lg" type="text" name="busca" id="busca" value="<?php echo (!empty($_GET['busca']))?$_GET['busca']:''; ?>" placeholder="Digite o código ou o nome do produto...">
-			  </div>
-			</form>
+			<h1>Relatório</h1>
 			<table class="table">
 			  <thead class="thead-light">
 			    <tr>
 			      <th scope="col">Código</th>
 			      <th scope="col">Nome</th>
 			      <th scope="col">Preço Unitário</th>
-			      <th scope="col">Quantidade</th>
-			      <th scope="col">Ações</th>
+			      <th scope="col">Quantidade Agora</th>
+			      <th scope="col">Deveria Ter</th>
 			    </tr>
 			  </thead>
 			  <tbody>
@@ -26,7 +21,7 @@
 			      <td><?php echo $item['name']; ?></td>
 			      <td>R$ <?php echo number_format($item['price'], 2, ',', '.'); ?></td>
 			      <td><?php echo $item['quantity']; ?></td>
-			      <td><a href="<?php echo BASE_URL; ?>products/edit/<?php echo $item['id']; ?>" class="btn btn-primary btn-sm" role="button" aria-pressed="true"><i class="fas fa-pencil-alt"></i> Editar</a></td>
+			      <td><?php echo $item['min_quantity']; ?></td>
 			    </tr>
 				<?php endforeach; ?>
 			  </tbody>

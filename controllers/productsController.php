@@ -18,7 +18,13 @@ class productsController extends Controller {
 
         $p = new Products();
 
-        $data['list'] = $p->getProducts();
+        $s = '';
+
+        if(isset($_GET['busca']) && !empty($_GET['busca'])){
+        	$s = $_GET['busca'];
+        }
+
+        $data['list'] = $p->getProducts($s);
 
         $this->loadTemplate('products', $data);
     }

@@ -13,6 +13,9 @@
               <a class="nav-link" href="<?php echo BASE_URL; ?>products">Produtos</span></a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="<?php echo BASE_URL; ?>report">Relatório</span></a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="<?php echo BASE_URL; ?>login/sair">Sair</a>
             </li>
         
