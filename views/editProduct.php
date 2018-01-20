@@ -25,7 +25,7 @@
 			    <label for="min_quantity">Quantidade Mínima</label>
 			    <input type="text" class="form-control" id="min_quantity" name="min_quantity" value="<?php echo $product['min_quantity']; ?>" required>
 			  </div>
-			  <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Salvar</button>
+			  <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Salvar</button>
 			  <a href="<?php echo BASE_URL; ?>products" class="btn btn-primary" role="button" aria-pressed="true"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Voltar</a>
 			</form>		
 		</div>

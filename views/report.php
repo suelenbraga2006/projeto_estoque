@@ -1,6 +1,6 @@
 <?php echo $this->loadView('nav', $dados = array()); ?>
 
-<div class="container">
+<div class="container align-container">
 	<div class="row">
 		<div class="col-xl-12 p-4">
 			<h1>Relatório</h1>
@@ -26,7 +26,6 @@
 				<?php endforeach; ?>
 			  </tbody>
 			</table>
-			<a href="<?php echo BASE_URL; ?>products/add" class="btn btn-primary" role="button" aria-pressed="true"><i class="fas fa-plus"></i> Adicionar Produto</a>
 		</div>
 	</div>
 </div>

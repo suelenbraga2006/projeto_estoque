@@ -1,24 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="<?php echo BASE_URL; ?>">Controle de Estoque</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASE_URL; ?>users">Usuários <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASE_URL; ?>products">Produtos</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASE_URL; ?>report">Relatório</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo BASE_URL; ?>login/sair">Sair</a>
-            </li>
-        
-      </ul>
+<nav>
+  <div id="nav">
+    <div id="brand">
+      <a href="<?php echo BASE_URL; ?>"><i class="fa fa-th-large" aria-hidden="true"></i></a>
     </div>
-  </nav>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="<?php echo BASE_URL; ?>users"> <i class="fa fa-users" aria-hidden="true"></i> Usuários </a>
+      </li>
+      <li class="nav-item">
+        <a href="<?php echo BASE_URL; ?>products"><i class="fa fa-cubes" aria-hidden="true"></i> Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a href="<?php echo BASE_URL; ?>report"><i class="fa fa-map-o" aria-hidden="true"></i> Relatório</a>
+      </li>
+      <li class="nav-item" id="sair">
+        <a href="<?php echo BASE_URL; ?>login/sair"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a>
+      </li>
+    </ul>
+  </div>
+</nav>
