@@ -1,10 +1,6 @@
 <?php echo $this->loadView('nav', $dados = array()); ?>
-<header>
-	<div id="header">
-		<div>teste</div>
-		<div>teste</div>
-	</div>
-</header>
+<?php echo $this->loadView('header', $dados = array()); ?>
+
 <div class="container">
 	<div class="row">
 		<div class="col-xl-12 p-4">

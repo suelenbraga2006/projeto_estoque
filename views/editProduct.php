@@ -1,4 +1,5 @@
 <?php echo $this->loadView('nav', $dados = array()); ?>
+<?php echo $this->loadView('header', $dados = array()); ?>
 
 <div class="container">
 	<div class="row">
@@ -26,7 +27,7 @@
 			    <input type="text" class="form-control" id="min_quantity" name="min_quantity" value="<?php echo $product['min_quantity']; ?>" required>
 			  </div>
 			  <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Salvar</button>
-			  <a href="<?php echo BASE_URL; ?>products" class="btn btn-primary" role="button" aria-pressed="true"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Voltar</a>
+			  <a href="<?php echo BASE_URL; ?>users" class="btn btn-primary" role="button" aria-pressed="true"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Voltar</a>
 			</form>		
 		</div>
 	</div>
