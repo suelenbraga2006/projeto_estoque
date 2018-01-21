@@ -1,7 +1,7 @@
 <nav>
   <div id="nav">
     <div id="brand">
-      <a href="<?php echo BASE_URL; ?>"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+      <a href="<?php echo BASE_URL; ?>">Controle de Estoque</a>
     </div>
     <ul class="nav-list">
       <li class="nav-item">
